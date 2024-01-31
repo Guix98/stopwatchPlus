@@ -1,0 +1,7 @@
+{
+    "appTitle": "Stopwatch+",
+    "laps": "Vueltas",
+    "resetWarningTitle": "¿Estás seguro de reiniciar todos los datos de esta vuelta?",
+    "resetWarningDescription": "Todas las paradas de vuelta y el cronómetro se reiniciarán",
+    "dataStorageNotice": "Todavía puedes acceder a los datos de esta vuelta en tu historial"
+}

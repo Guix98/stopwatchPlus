@@ -1,9 +1,11 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:stopwatches_plus/modules/stopwatch/widgets/stopwatch_container.dart';
-import 'package:stopwatches_plus/modules/stopwatch/widgets/stopwatch_controls.dart';
-import 'package:stopwatches_plus/shared/widgets/responsive_layout.dart';
+import 'package:stopwatches_plus/generated/l10n.dart';
+import 'package:stopwatches_plus/src/modules/stopwatch/widgets/stopwatch_container.dart';
+import 'package:stopwatches_plus/src/modules/stopwatch/widgets/stopwatch_controls.dart';
+import 'package:stopwatches_plus/src/shared/helpers/helpers.dart';
+import 'package:stopwatches_plus/src/shared/widgets/responsive_layout.dart';
 import 'package:stopwatches_plus/themes/tokens.dart' as t;
 
 class StopwatchPage extends StatefulWidget {
@@ -21,9 +23,9 @@ class _StopwatchPageState extends State<StopwatchPage> {
 
   void _startTimer() {
     _isRunning = true;
-    timer = Timer.periodic(Duration(milliseconds: 10), (Timer timer) {
+    timer = Timer.periodic(const Duration(milliseconds: 10), (Timer timer) {
       setState(() {
-        _currentTime = _currentTime + Duration(milliseconds: 10);
+        _currentTime = _currentTime + const Duration(milliseconds: 10);
       });
     });
   }
@@ -50,9 +52,10 @@ class _StopwatchPageState extends State<StopwatchPage> {
 
   @override
   Widget build(BuildContext context) {
+    final locale = S.of(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cronómetro'),
+        title: Text(locale.appTitle),
       ),
       body: SafeArea(
         child: Padding(
@@ -90,10 +93,9 @@ class _StopwatchPageState extends State<StopwatchPage> {
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      SizedBox(height: 10),
+                      const SizedBox(height: t.Spacing.s12),
                       Text(
-                        'Pausas:',
-                        style: TextStyle(fontSize: 18),
+                        locale.laps,
                         textScaler: _isRunning
                             ? MediaQuery.textScalerOf(context)
                             : null,
@@ -105,8 +107,7 @@ class _StopwatchPageState extends State<StopwatchPage> {
                             return Card(
                               child: ListTile(
                                 title: Text(
-                                  'Pausa ${index + 1}: ${_pauseTimes[index].inMinutes.remainder(60).toString().padLeft(2, '0')}:${(_pauseTimes[index].inSeconds.remainder(60)).toString().padLeft(2, '0')}',
-                                ),
+                                    '${index + 1}: ${stopwatchDisplayFormat(_pauseTimes[index])}'),
                               ),
                             );
                           },

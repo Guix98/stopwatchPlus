@@ -1,0 +1,7 @@
+{
+    "appTitle": "Stopwatch+",
+    "laps": "Laps",
+    "resetWarningTitle": "Are you sure to reset all the data for this lap?",
+    "resetWarningDescription": "All the lap stops and the stopwatch will be reset",
+    "dataStorageNotice": "You can still access to this lap data in your record"
+}
