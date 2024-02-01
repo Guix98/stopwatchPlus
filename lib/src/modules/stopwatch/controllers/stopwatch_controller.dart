@@ -1,6 +1,8 @@
 import 'dart:async';
+
 import 'package:get/state_manager.dart';
 import 'package:get_storage/get_storage.dart';
+
 import 'package:stopwatches_plus/src/shared/models/lap_record.dart';
 
 class StopwatchController extends GetxController {

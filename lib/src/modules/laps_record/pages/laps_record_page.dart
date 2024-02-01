@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:get/instance_manager.dart';
+
 import 'package:stopwatches_plus/generated/l10n.dart';
 import 'package:stopwatches_plus/src/modules/laps_record/controllers/laps_record_controller.dart';
 import 'package:stopwatches_plus/src/shared/helpers/helpers.dart';
@@ -26,7 +28,7 @@ class LapsRecordPage extends StatelessWidget {
                         title:
                             "${locale.lapsRecord}: ${formattedDateFromMilliseconds(controller.record[index].id)}",
                         content: Padding(
-                          padding: EdgeInsets.all(t.Spacing.s12),
+                          padding: const EdgeInsets.all(t.Spacing.s12),
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -34,7 +36,7 @@ class LapsRecordPage extends StatelessWidget {
                                 .map((lap) => Row(
                                       mainAxisSize: MainAxisSize.min,
                                       children: [
-                                        Icon(
+                                        const Icon(
                                           Icons.star,
                                           size: t.FontSize.sm,
                                         ),
@@ -44,7 +46,7 @@ class LapsRecordPage extends StatelessWidget {
                                         ),
                                         Text(
                                           '$lap',
-                                          style: TextStyle(
+                                          style: const TextStyle(
                                               fontSize: t.FontSize.lg),
                                         )
                                       ],

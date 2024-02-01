@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'package:get/get.dart';
+
 import 'package:stopwatches_plus/generated/l10n.dart';
 import 'package:stopwatches_plus/src/modules/laps_record/controllers/laps_record_controller.dart';
 import 'package:stopwatches_plus/src/modules/laps_record/pages/laps_record_page.dart';

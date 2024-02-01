@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:get/instance_manager.dart';
+
 import 'package:stopwatches_plus/generated/l10n.dart';
 import 'package:stopwatches_plus/src/modules/stopwatch/controllers/stopwatch_controller.dart';
 import 'package:stopwatches_plus/src/modules/stopwatch/widgets/stopwatch_container.dart';
 import 'package:stopwatches_plus/src/modules/stopwatch/widgets/stopwatch_controls.dart';
 import 'package:stopwatches_plus/src/shared/helpers/helpers.dart';
-import 'package:stopwatches_plus/src/shared/widgets/responsive_layout.dart';
 import 'package:stopwatches_plus/src/shared/widgets/row_or_column.dart';
 import 'package:stopwatches_plus/themes/tokens.dart' as t;
 

@@ -1,6 +1,7 @@
-import 'package:another_flushbar/flushbar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import 'package:another_flushbar/flushbar.dart';
 import 'package:intl/intl.dart';
 
 TextScaler basicTextScaler(BuildContext context) {

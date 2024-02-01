@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get/instance_manager.dart';
+
 import 'package:stopwatches_plus/generated/l10n.dart';
 import 'package:stopwatches_plus/src/layout.dart';
 import 'package:stopwatches_plus/src/modules/laps_record/controllers/laps_record_controller.dart';
