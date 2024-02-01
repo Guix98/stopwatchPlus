@@ -23,12 +23,14 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "appTitle": MessageLookupByLibrary.simpleMessage("Stopwatch+"),
-        "dataStorageNotice": MessageLookupByLibrary.simpleMessage(
-            "You can still access to this lap data in your record"),
+        "dataStorageNotice":
+            MessageLookupByLibrary.simpleMessage("Lap saved on record"),
         "laps": MessageLookupByLibrary.simpleMessage("Laps"),
+        "lapsRecord": MessageLookupByLibrary.simpleMessage("Record"),
         "resetWarningDescription": MessageLookupByLibrary.simpleMessage(
             "All the lap stops and the stopwatch will be reset"),
         "resetWarningTitle": MessageLookupByLibrary.simpleMessage(
-            "Are you sure to reset all the data for this lap?")
+            "Are you sure to reset all the data for this lap?"),
+        "stopwatch": MessageLookupByLibrary.simpleMessage("Stopwatch")
       };
 }

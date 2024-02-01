@@ -24,11 +24,13 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "appTitle": MessageLookupByLibrary.simpleMessage("Stopwatch+"),
         "dataStorageNotice": MessageLookupByLibrary.simpleMessage(
-            "Todavía puedes acceder a los datos de esta vuelta en tu historial"),
+            "Vuelta guardada en el historial"),
         "laps": MessageLookupByLibrary.simpleMessage("Vueltas"),
+        "lapsRecord": MessageLookupByLibrary.simpleMessage("Historial"),
         "resetWarningDescription": MessageLookupByLibrary.simpleMessage(
             "Todas las paradas de vuelta y el cronómetro se reiniciarán"),
         "resetWarningTitle": MessageLookupByLibrary.simpleMessage(
-            "¿Estás seguro de reiniciar todos los datos de esta vuelta?")
+            "¿Estás seguro de reiniciar todos los datos de esta vuelta?"),
+        "stopwatch": MessageLookupByLibrary.simpleMessage("Cronómetro")
       };
 }

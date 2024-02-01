@@ -7,11 +7,13 @@ environment:
   sdk: ">=3.2.4 <4.0.0"
 
 dependencies:
+  another_flushbar: ^1.12.30
   flutter:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
   get: ^4.6.6
+  get_storage: ^2.1.1
   google_fonts: ^6.1.0
   intl: ^0.18.0
 

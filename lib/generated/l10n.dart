@@ -70,6 +70,26 @@ class S {
     );
   }
 
+  /// `Stopwatch`
+  String get stopwatch {
+    return Intl.message(
+      'Stopwatch',
+      name: 'stopwatch',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Record`
+  String get lapsRecord {
+    return Intl.message(
+      'Record',
+      name: 'lapsRecord',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Are you sure to reset all the data for this lap?`
   String get resetWarningTitle {
     return Intl.message(
@@ -90,10 +110,10 @@ class S {
     );
   }
 
-  /// `You can still access to this lap data in your record`
+  /// `Lap saved on record`
   String get dataStorageNotice {
     return Intl.message(
-      'You can still access to this lap data in your record',
+      'Lap saved on record',
       name: 'dataStorageNotice',
       desc: '',
       args: [],
