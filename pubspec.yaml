@@ -12,10 +12,27 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
+  flutter_native_splash: ^2.3.10
   get: ^4.6.6
   get_storage: ^2.1.1
   google_fonts: ^6.1.0
   intl: ^0.18.0
+#   flutter_launcher_icons: ^0.13.1
+
+# flutter_launcher_icons:
+#   image_path_android: "assets/icon/icon.png"
+#   image_path_ios: "assets/icon/icon.png"
+#   android: true # can specify file name here e.g. "ic_launcher"
+#   ios: true # can specify file name here e.g. "My-Launcher-Icon"
+#   min_sdk_android: 21 # android min sdk min:16, default 21
+#   remove_alpha_ios: true
+#   background_color_ios: "#585858"
+#   adaptive_icon_background: "#585858"
+#   web:
+#     generate: true
+#     image_path: "assets/icon/icon.png"
+#     background_color: "#hexcode"
+#     theme_color: "#hexcode"
 
 dev_dependencies:
   flutter_lints: ^2.0.0
@@ -27,3 +44,13 @@ flutter:
   uses-material-design: true
 flutter_intl:
   enabled: true
+
+flutter_native_splash:
+  color: "#000000"
+  branding: assets/icon/icon.png
+  android: true
+  ios: true
+  web: true
+  android_gravity: center_vertical
+  ios_content_mode: scaleAspectFit
+  web_image_mode: cover
